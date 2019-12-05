@@ -3,8 +3,8 @@ var router = express.Router();
 
 
 var fooStatus = require('redis-status')({
-  port: 6379,
-  host: 'localhost'
+  port: process.env.REDIS_PORT,
+  host: process.env.REDIS_HOST
 });
  
 router.get('/', function(req, res) {
