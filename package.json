@@ -1,0 +1,19 @@
+{
+  "name": "redis-health-check",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start ./bin/www --name redis-health-check"
+  },
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "cookie-parser": "~1.4.4",
+    "express": "~4.16.1",
+    "express-jwt": "^5.3.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "redis": "^2.8.0",
+    "redis-status": "^1.0.3",
+    "request": "^2.88.0"
+  }
+}
