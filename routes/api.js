@@ -7,9 +7,8 @@ Promise.promisifyAll(redis.RedisClient.prototype);
 Promise.promisifyAll(redis.Multi.prototype);
 
 var client = redis.createClient({
-    //port: process.env.REDIS_PORT,
-    host: process.env.REDIS_HOST,
-    port: 7000
+    port: process.env.REDIS_PORT,
+    host: process.env.REDIS_HOST
 });
 
 
